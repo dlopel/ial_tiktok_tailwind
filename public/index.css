@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'PopBlack';
+    src: url(./fonts/Poppins-Black.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'PopMedium';
+    src: url(./fonts/Poppins-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'PopSemiBold';
+    src: url(./fonts/Poppins-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'PopBold';
+    src: url(./fonts/Poppins-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'PopExtra';
+    src: url(../fonts/Poppins-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #000;
+}
+
+.iframe {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+.iframe__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
