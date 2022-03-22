@@ -1,27 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .wrapper {
+    @apply lg:max-w-[1400px] lg:px-4 w-[85%] mx-auto;
+  }
+}
+@layer utilities {
+  .pop-bla {
+    font-family: "PopBlack";
+  }
+  .pop-med {
+    font-family: "PopMedium";
+  }
+  .pop-sem {
+    font-family: "PopSemiBold";
+  }
+  .pop-bol {
+    font-family: "PopBold";
+  }
+  .pop-ext {
+    font-family: "PopExtra";
+  }
+}
+
 @font-face {
-    font-family: 'PopBlack';
-    src: url(./fonts/Poppins-Black.ttf);
-    font-weight: 400;
+  font-family: "PopBlack";
+  src: url(./fonts/Poppins-Black.ttf);
+  font-weight: 400;
 }
 @font-face {
-    font-family: 'PopMedium';
-    src: url(./fonts/Poppins-Medium.ttf);
-    font-weight: 500;
+  font-family: "PopMedium";
+  src: url(./fonts/Poppins-Medium.ttf);
+  font-weight: 500;
 }
 @font-face {
-    font-family: 'PopSemiBold';
-    src: url(./fonts/Poppins-SemiBold.ttf);
-    font-weight: 600;
+  font-family: "PopSemiBold";
+  src: url(./fonts/Poppins-SemiBold.ttf);
+  font-weight: 600;
 }
 @font-face {
-    font-family: 'PopBold';
-    src: url(./fonts/Poppins-Bold.ttf);
-    font-weight: 700;
+  font-family: "PopBold";
+  src: url(./fonts/Poppins-Bold.ttf);
+  font-weight: 700;
 }
 @font-face {
-    font-family: 'PopExtra';
-    src: url(../fonts/Poppins-ExtraBold.ttf);
-    font-weight: 800;
+  font-family: "PopExtra";
+  src: url(./fonts/Poppins-ExtraBold.ttf);
+  font-weight: 800;
 }
 
 :root {
@@ -44,4 +71,27 @@
   width: 100%;
   height: 100%;
   border: none;
+}
+
+.body-bg {
+  background-image: url(./img/puntitos_movil.png), url(./img/puntitos_movil.png),
+    url(./img/puntitos_horizontal_movil.png),
+    url(./img/puntitos_horizontal_movil.png), url(./img/fondo-negro.gif);
+  background-position: 2% 6%, 98% 20%, -80px 85%, calc(100% + 90px) 70%;
+  background-repeat: no-repeat;
+  background-size: auto, auto, auto, auto, cover;
+}
+
+.footer {
+  background-image: url(./img/footer.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    background-size: cover;
+    padding-top: 60px;
+    background-position: right top;
+  }
 }
